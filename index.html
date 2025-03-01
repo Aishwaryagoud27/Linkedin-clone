@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: whitesmoke;
+            width: 100vw;
+            height: 63px;
+            box-shadow: 0 0 10px gray;
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            
+
+
+        }
+
+       
+            .input-group {
+                width: 400px;
+               
+            }
+            .left{
+            margin-top: 20px;
+        }
+
+        
+        .logo{
+            margin-bottom: 10px ;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-left: 400px;
+            margin-top: 17px;
+            font-size: 24px;
+            column-gap: 40px;
+            margin-bottom: 20px;
+         }
+         .rightend {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 17px;
+                font-size: 14px;
+         }
+
+        .section-1 {
+            min-height: 100vh;
+            background-color: whitesmoke;
+            position: relative;
+            z-index: -2;
+            min-height: 100vh;
+
+
+
+
+        }
+
+        .left-1 {
+            width: 19vw;
+            height: auto;
+            background-color: whitesmoke;
+            margin-right: 10px;
+
+
+
+
+
+        }
+
+        .middle-1 {
+            width: 59vw;
+            min-height: auto;
+            background-color: whitesmoke;
+            margin-right: 10px;
+
+        }
+
+        .right-1 {
+            width: 19vw;
+            min-height: auto;
+            background-color: whitesmoke;
+
+        }
+
+        .leftone {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 50px;
+            background-image: cover;
+
+
+        }
+
+        .img {
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            border-radius: 50px;
+            
+        }
+        .aish{
+            position: relative;
+            bottom:30px;
+            left: 20px;
+            border-color: grey;
+            border-width: 2px;
+        }
+
+        .lefttwo {
+            width: 100%;
+            height: 130px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 10px;
+
+
+        }
+
+        .leftthree{
+            width: 100%;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 10px;
+            padding-left: 30px;
+            font-size: 15px;
+
+        }
+
+        .middleone {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 50px;
+            justify-content: space-evenly;
+        }
+        .dp{
+            margin-left: 30px;
+           margin-top: 20px;
+           padding: 10px;
+           
+
+        }
+        .m1top{
+            margin-left: 30px;
+        }
+
+        .middletwo {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 10px;
+
+        }
+        .post1{
+            height: 400px;
+        }
+
+        .middlethree {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 10px;
+
+        }
+
+        .rightone {
+            width: 100%;
+            height: 650px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 50px;
+
+        }
+
+        .righttwo {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 10px;
+            position: sticky;
+            top: 90px;
+
+
+        }
+        .follow{
+            align-items: center;
+            border: 1px solid rgb(77, 135, 193);
+            color: rgb(77, 135, 193);
+            width: 95%;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        .aramco{
+            position: relative;
+            left: 20px;
+            bottom: 30px;
+            border-color: grey;
+            border-width: 4px;
+        }
+        @media (max-width:1200px){
+            .right-1{
+                display: none;
+            }
+            .right{
+                display: none;
+            }
+            .rightend{
+                display: none;
+            }
+            .nav{
+                display: none;
+            }
+            .lefttwo{
+                display: none;
+            }
+        }
+        @media(max-width:992px){
+            
+            
+            .rightend{
+                display: none;
+            }
+            .right{
+                display: none;
+            }
+            .section-1{
+
+                display: flex;
+                flex-direction: column;
+            }
+            .left-1{
+                width: auto;
+                height: auto;
+            }
+            .leftthree{
+                display: none;
+            }
+            .middle-1{
+                align-items: center;
+                width: auto;
+            }
+            .navitem{
+                display: none;
+            }
+            .logo{
+                align-items: center;
+                justify-content: center;
+                margin-left: 70px;
+                
+            }
+            .lefttwo{
+                display: none;
+            }
+            .left{
+                align-items: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="d-flex flex-row align-items-center justify-content-center">
+        <div class="left  d-flex flex-row justify-content-space-between ">
+            <img src="l1.png" class="logo" height="48px">
+            <div class="input-group d-none d-lg-flex d-md-flex d-sm-none mb-3  ">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control search" placeholder="Search" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+        </div>
+        <div class="right d-flex justify-content-center align-items-center ">
+            <div class="d-flex flex-column justify-content-center align-items-center "><i class="fa-solid fa-house navitem"></i>
+
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center"><i
+                    class="fa-solid fa-user-group navitem"></i>
+
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center"><i
+                    class="fa-solid fa-briefcase navitem"></i>
+
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-comment navitem"></i>
+
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center  "><i class="fa-solid fa-bell navitem"></i>
+
+            </div>
+            <div
+                class="d-flex flex-column justify-content-center align-items-center border-end px-4 border-3 border-secondary ">
+                <i class="fa-solid fa-circle-user"></i>
+
+            </div>
+        </div>
+        <div class="rightend">
+            <div class="flex-column  align-items-center d-md-flex d-sm-none justify-content-center dots px-3   ">
+                <div class="navitem">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p> Business
+                  
+                </p>
+            </div>
+            <div class="premium d-flex flex-column justify-content-center align-items-center">
+                <img src="pre.png" height="17px">
+                <p>Premium </p>
+            </div>
+
+
+        </div>
+
+    </nav>
+    <div class="container fluid section-1 d-flex ">
+        <div class="left-1">
+            <div class="leftone">
+                <img class="banner" src="i1.avif" alt="" height="80px" width=100%>
+                <img src="dp.webp" width="70px" height="70" class="rounded-circle aish" alt=""
+                    margin-bottom: 0>
+                <div class="d-flex flex-column info align-items-start px-2">
+                    <p style="font-size: 20px; font-weight: 600; margin-bottom: 0;">AISHWARYA POLAGONI</p>
+                    <p style="font-size: 15px; margin: 0;">Student at SNIST 
+                    </p>
+                    <p style="color: grey; font-size:10px;">Hyderabad, Telangana</p>
+                    <div class="d-flex justify-content-center align-items-center gap-1">
+                        <img style="margin-bottom: 15px;" src="Sreenidhi-logo-1.png" width="25px" alt="">
+                        <p style="font-size: 11px; font-weight: 600;">Sreenidhi Institute of Science and Technology</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lefttwo ">
+                <div class=" d-flex d-none d-lg-flex d-md-flex d-sm-none justify-content-evenly align-items-start gap-4 mx-3 py-4 ">
+                    <div class="d-flex flex-column align-items-start">
+                        <p class="linktype">Profile viewers</p>
+
+                        <p class="linktype">View analytics</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="text-primary linktype">658</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="leftthree d-flex flex-column d-none d-lg-flex d-md-flex d-sm-none justify-content-evenly align-items-start">
+                <div>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span class="imp align-items-start">Saved items</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-group"></i>
+                    <span class="imp align-items-start">Groups</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span class="imp">Newsletters</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calendar"></i>
+                    <span class="imp">Events</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="middle-1">
+            <div class="middleone ">
+               
+                    <div class=" m1top d-flex justify-content-evenly align-items-center">
+                        <img src="dp.webp" height="50px" width="50px" class="rounded-circle" alt="">
+                        <input type="text" class="form-control" placeholder="Start a post" aria-label="post"
+                    aria-describedby="basic-addon1 ">
+                    </div>
+
+            </div>
+            <div class="middletwo">
+                <div class="header ">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex p-3">
+                            <img src="pp1.jpg" class="Profile-1 rounded-circle" alt="" height="60px" width="60px">
+                            <div class="px-2 ">
+                                <span class="fw-medium">Nidhi patil</span><span style="font-size:10px;">| 1st</span>
+                                <p style="font-size: 13px; margin: 0">Software Engineer
+                                </p>
+                                <p style="font-size: 10px;">3d | Edited | <i class="fa-solid fa-earth-americas"></i></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start fs-5 gap-4 p-2">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <p style="font-size: 14px; margin-left: 10px; "> I failed 20+ coding interviews until I understood and applied these concepts (This post will give you much needed coding concepts that I learned after grinding for 2 years)
+
+                            Most people grind hundreds of Leetcode problems, but that’s not the smartest way to prepare.  Instead, focus on the core concepts that matter
+
+                            <span style="color: gray;">...more</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row postimg">
+
+                    <img class="post1" src="post1.jpg" width="100%">
+                </div>
+                <div class="head d-flex justify-content-between px-2 py-1">
+                    <div class="d-flex justify-content-start align-items-center gap-1 like1">
+                        <p><img src="like.png" height="20px"></p>
+                        <div style="font-size: 12px; margin-bottom: 9px;">Rishik and 979 others</div>
+                    </div>
+                    <div class="comments1">10 commments | 213 reposts</div>
+                </div>
+                <div class="bd"></div>
+                <div class="comments border-">
+                    <div class="d-flex justify-content-around align-items-center py-2 border-top border-dark border-1">
+                        <div class="d-flex justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-regular fa-thumbs-up"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">like</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-comment-dots"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Comment</p>
+                        </div>
+                        <div class="d-flex  justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-repeat"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Repost</p>
+                        </div>
+                        <div class="d-flex  justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-paper-plane"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middlethree">
+                <div class="header ">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex p-3">
+                            <img src="kpmgindia_logo.jpg" class="Profile-1 " alt="" height="60px" width="60px">
+                            <div class="px-2 ">
+                                <span class="fw-medium">KPMG India</span><span style="font-size:10px;">| 1st</span>
+                                <p style="font-size: 13px; margin: 0">promoted
+                                </p>
+                                <p style="font-size: 10px;">3d | Edited | <i class="fa-solid fa-earth-americas"></i></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start fs-5 gap-4 p-2">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <p style="font-size: 14px; margin-left: 10px; ">Developing core financial literacy is crucial for project managers aiming to secure the success of their projects. Join our informative webinar to delve into key financial principles, tools, and techniques that can be applied to manage project budgets, control costs, and increase financial performance.
+
+                            Secure your spot today! Click here to register: https://lnkd.in/dGWq8hQa
+                            
+
+                            <span style="color: gray;">...more</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row postimg">
+
+                    <img class="post2" src="post2.jpg" width="100%">
+                </div>
+                <div class="head d-flex justify-content-between px-2 py-1">
+                    <div class="d-flex justify-content-start align-items-center gap-1 like1">
+                        <p><img src="like.png" height="20px"></p>
+                        <div style="font-size: 12px; margin-bottom: 9px;">Rishik and 979 others</div>
+                    </div>
+                    <div class="comments1">10 commments | 213 reposts</div>
+                </div>
+                <div class="bd"></div>
+                <div class="comments border-">
+                    <div class="d-flex justify-content-around align-items-center py-2 border-top border-dark border-1">
+                        <div class="d-flex justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-regular fa-thumbs-up"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">like</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-comment-dots"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Comment</p>
+                        </div>
+                        <div class="d-flex  justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-repeat"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Repost</p>
+                        </div>
+                        <div class="d-flex  justify-content-center align-items-center gap-2 bottom-post">
+                            <p><i class="fa-solid fa-paper-plane"></i></p>
+                            <p class=" d-none d-lg-flex d-md-flex d-sm-none">Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-1">
+            <div class="rightone p-2">
+                <div class="d-flex justify-content-between">
+                    <p>Trending Now</p>
+                    <p style="margin-top: 1px; font-size: 13px" class="fa-solid fa-circle-info h-20px"></p>
+                </div>
+                <p style="color: gray; font-weight: 500; margin-bottom: 5px;">curated by LinkedIn News</p>
+                <div class="news">
+                    <h6 style="font-size: 14px; margin: 4px 0;">SpiceJet profitable first time in 10 years</h6>
+                    <p style="font-size:12px;">6h ago • 4,189 readers</p>
+                </div>
+                <div class="news">
+                    <h6 style="font-size: 14px; margin: 4px 0;">APAC leads in AI adoption
+                    </h6>
+                    <p style="font-size:12px;">5h ago • 2,553 readers</p>
+                </div>
+                <div class="news">
+                    <h6 style="font-size: 14px; margin: 4px 0;">Globetrotting gets costlier</h6>
+                    <p style="font-size:12px;">4h ago • 1,791 readers</p>
+                </div>
+                <div class="news">
+                    <h6 style="font-size: 14px; margin: 4px 0;">Loan woes for students abroad</h6>
+                    <p style="font-size:12px;">5h ago • 1,961 readers</p>
+                </div>
+                <div class="news">
+                    <h6 style="font-size: 14px; margin: 4px 0;">Retail sales gain momentum</h6>
+                    <p style="font-size:12px;">2h ago • 226 readers</p>
+                </div>
+                <h6 style="color: gray;">Today's puzzles</h6>
+                <div>
+                    <div class="d-flex puzzle justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <img style="margin-bottom: 16px;;" src="tango.svg" alt="">
+                            <div>
+                                <h6 style="margin: 0; font-size: 15px;">Tango</h6>
+                                <p style="font-size: 13px;">10 connections played</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex puzzle justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <img style="margin-bottom: 16px;;" src="queen game.svg" alt="">
+                            <div>
+                                <h6 style="margin: 0; font-size: 15px;">Queens</h6>
+                                <p style="font-size: 13px;">5 connections played</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chevron-right "></i>
+                        </div>
+                    </div>
+                    <div class="d-flex puzzle justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <img style="margin-bottom: 16px;;" src="pinpoint.svg" alt="">
+                            <div>
+                                <h6 style="margin: 0; font-size: 15px;">Pinpoint</h6>
+                                <p style="font-size: 13px;">Guess the category</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex puzzle justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <img style="margin-bottom: 16px;;" src="cross-climb.svg" alt="">
+                            <div>
+                                <h6 style="margin: 0; font-size: 15px;">Crossclimb</h6>
+                                <p style="font-size: 13px;">Unlock a trivia ladder</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="righttwo">
+                <img class="banner" src="aramco_cover.jpg" alt="" height="70px" width=100%>
+                <img src="aramcodp.jpg" width="70px" height="70" class=" aramco" alt=""
+                    margin-bottom: 0 >
+                <div class="d-flex flex-column info align-items-start px-3">
+                    <p style="font-size: 20px; font-weight: 600; margin-bottom: 0;">Aramco</p>
+                    <p style="font-size: 15px; margin: 0;">Aishwarya, grow your career by following aramco
+                    </p>
+                    <p style="color: grey; font-size:10px;">Visit the company page for aramco!</p>
+                    <div class="followbtn" style="padding-left: 20px; width: 100%;"><input type="button" value="Follow"
+                        class="follow"></div>
+                    
+            </div>
+            <div class="rightthree"></div>
+        </div>
+
+  
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
